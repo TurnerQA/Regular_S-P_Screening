@@ -1,0 +1,248 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Perform_S_P" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1334,3957" sap2010:WorkflowViewState.IdRef="Perform_BS_Task_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Perform_BS_Task" sap:VirtualizedContainerService.HintSize="1344,3852" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="Player_Popup_Exists" />
+      <Variable x:TypeArguments="x:Boolean" Name="Segmentation_form_Exists" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="1302,3760" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1260,425" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+        <ui:InterruptibleDoWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:UiElementExists DisplayName="Element Exists-Player Icons" Exists="[Player_Popup_Exists]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bca189b8-aa2c-4066-80ed-93b70195fde7" InformativeScreenshot="f4b2cb8201e6759bdac44ca02e804d57" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='CMP_AssetViewerPlayerInstance_leftControlBar' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+          </Sequence>
+        </ui:InterruptibleDoWhile.Body>
+        <ui:InterruptibleDoWhile.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Player_Popup_Exists=False" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+        </ui:InterruptibleDoWhile.Condition>
+      </ui:InterruptibleDoWhile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1260,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Player exists&quot;]" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Mark-In" sap:VirtualizedContainerService.HintSize="1260,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="WaitForElement.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl id='CMP_AssetViewerPlayerInstance_btnCMPMarkIn' tag='DIV' /&gt;</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="ELement_Result" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1260,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Makin is done&quot;]" />
+      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1260,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Mark-Out" sap:VirtualizedContainerService.HintSize="1260,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="WaitForElement.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl id='CMP_AssetViewerPlayerInstance_btnCMPMarkOut' tag='DIV' /&gt;</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="ELement_Result" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1260,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;markout is done&quot;]" />
+      <ui:UiElementExists DisplayName="Element Exists -Segmentation form" Exists="[Segmentation_form_Exists]" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+        <ui:UiElementExists.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5973a75-496d-405d-8bda-b5314c67dfa1" InformativeScreenshot="2a783828c96d954eb578a2acc08ec248" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='mklDetailForm' tag='DIV' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:UiElementExists.Target>
+      </ui:UiElementExists>
+      <If Condition="[Segmentation_form_Exists=True]" sap:VirtualizedContainerService.HintSize="1260,2298" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="839,2150" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Segmentation form exists&quot;]" />
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <Sequence DisplayName="Segmentation details" sap:VirtualizedContainerService.HintSize="797,1865" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Segment_Save_Alert" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Segment Title" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="WaitingForElementAndSendText.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="TypeInto">Title S&amp;P 1</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl aaname='Title' type='textbox' /&gt;</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="COmplence select" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="WaitingForElementAndSendText.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="TypeInto">Comment: Others</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl parentid='formAttributesOuterDiv' class='CaptionCont SelectBox mssearch' /&gt;</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="755,282" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Edit actions" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="WaitingForElementAndSendText.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="TypeInto">Comment: Others</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl parentid='formAttributesOuterDiv' tag='SPAN' idx='31' /&gt;</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Enter Keywords" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="WaitingForElementAndSendText.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="TypeInto">Keyword</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl aaname='Keywords' type='textbox' /&gt;</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Enter Description" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="WaitingForElementAndSendText.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="TypeInto">Description added</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl aaname='Description' idx='2' /&gt;</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="755,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Save Segment" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="WaitForElement.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl idx='1' parentid='catBtnFooter' tag='DIV' /&gt;</InArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="ELement_Result" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Segment Save Alert" sap:VirtualizedContainerService.HintSize="755,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="WaitForElementAndGetText.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl idx='2' isleaf='1' parentid='alertWrapper' tag='DIV' /&gt;
+</InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="getTextValue">[Segment_Save_Alert]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <If Condition="[Segment_Save_Alert.Contains(&quot;successfully&quot;)]" sap:VirtualizedContainerService.HintSize="755,477" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Segment saved successfully&quot;]" />
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,329" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Error while saving Segment,closing window&quot;]" />
+                    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe  CLEAR'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="062975a0c5bbf4ee5b62243268d45fc8" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;" WaitForReady="INTERACTIVE" />
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,183" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Segmentation form does not exists&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>

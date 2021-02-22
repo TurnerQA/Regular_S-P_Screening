@@ -1,0 +1,696 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Out_Config" Type="InArgument(x:String)" />
+    <x:Property Name="getstus1" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>814,519</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <StateMachine InitialState="{x:Reference __ReferenceID9}" DisplayName="State Machine" sap:VirtualizedContainerService.HintSize="685,636" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">0,2.5</av:Point>
+          <x:Double x:Key="StateContainerWidth">651</x:Double>
+          <x:Double x:Key="StateContainerHeight">600</x:Double>
+          <av:PointCollection x:Key="ConnectorLocation">60,70 90,70 90,100.5 126.4,100.5 126.4,70.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+        <State.Entry>
+          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" SecurePassword="{x:Null}" Body="[Out_Config(&quot;Email_body&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="[Out_Config(&quot;Email&quot;).ToString.Trim]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[Out_Config(&quot;Email_Password&quot;).ToString.Trim]" Port="465" SecureConnection="Auto" Server="mail.primefocus.com" Subject="[Out_Config(&quot;Subject&quot;).ToString]" TimeoutMS="180000" To="[Out_Config(&quot;To&quot;).ToString]">
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                <InArgument x:TypeArguments="x:String">[Out_Config("Reportpath").ToString]</InArgument>
+              </scg:List>
+            </ui:SendMail.Files>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:SendMail>
+        </State.Entry>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">3,149.5</av:Point>
+            <av:Size x:Key="ShapeSize">134,61</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </State>
+      <State x:Name="__ReferenceID9" DisplayName="Initilization" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_3">
+        <State.Entry>
+          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Initialization.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="ConfigFile">[ConfigFile]</InOutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ConfigSheet">[ConfigSheet]</OutArgument>
+              <InOutArgument x:TypeArguments="s:String[]" x:Key="ConfigSheets">[ConfigSheets]</InOutArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="ConfigDT">[ConfigDT]</InOutArgument>
+              <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Out_Config">[Out_Config]</InOutArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </State.Entry>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">113,9.5</av:Point>
+            <av:Size x:Key="ShapeSize">134,61</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <State.Transitions>
+          <Transition DisplayName="T1" sap2010:WorkflowViewState.IdRef="Transition_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:PointCollection x:Key="ConnectorLocation">247,40 277,40 277,48.2 313,48.2</av:PointCollection>
+                <x:Int32 x:Key="SrcConnectionPointIndex">36</x:Int32>
+                <x:Int32 x:Key="DestConnectionPointIndex">29</x:Int32>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Transition.To>
+              <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Login to Porta to perform S&amp;P&#xA;" DisplayName="Login " sap:VirtualizedContainerService.HintSize="134,118" sap2010:WorkflowViewState.IdRef="State_4">
+                <State.Entry>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="PORTALLOGIN.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="edit_selector">&lt;webctrl id='editUserName' tag='DIV' /&gt;</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="portal_url">[Out_Config("url").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="username">[Out_Config("username").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="password">[Out_Config("password").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                  </Sequence>
+                </State.Entry>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">313,1</av:Point>
+                    <av:Size x:Key="ShapeSize">134,118</av:Size>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <State.Transitions>
+                  <Transition DisplayName="T2" sap2010:WorkflowViewState.IdRef="Transition_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:PointCollection x:Key="ConnectorLocation">447,42.3 580.1,42.3 580.1,69.5</av:PointCollection>
+                        <x:Int32 x:Key="SrcConnectionPointIndex">24</x:Int32>
+                        <x:Int32 x:Key="DestConnectionPointIndex">50</x:Int32>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Transition.To>
+                      <State x:Name="__ReferenceID3" DisplayName="Navigate &amp;Search" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_6">
+                        <State.Entry>
+                          <Sequence sap:VirtualizedContainerService.HintSize="418,448" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,356" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="NavigatetoLatamDashboard.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="tasks_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Tasks' tag='SPAN' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="process_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Process' tag='SPAN' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="latam_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Longform LATAM' tag='SPAN' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Navigated_Latam_validate_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='breadCrumbKey1' tag='DIV' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Search_ProcessMonitor.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="search_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='WCsrchIcon' tag='DIV' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Material_ID_Excel">[Out_Config("Material_ID").ToString]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="MaterialID_UI_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Material-Chapter : *' parentid='actionDivHZ_0' tag='SPAN' /&gt;</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                            </Sequence>
+                          </Sequence>
+                        </State.Entry>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">493,69.5</av:Point>
+                            <av:Size x:Key="ShapeSize">134,61</av:Size>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <State.Transitions>
+                          <Transition DisplayName="T4" sap2010:WorkflowViewState.IdRef="Transition_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:PointCollection x:Key="ConnectorLocation">580.1,130.5 573.5,130.5 573.5,159.5</av:PointCollection>
+                                <x:Int32 x:Key="SrcConnectionPointIndex">51</x:Int32>
+                                <x:Int32 x:Key="DestConnectionPointIndex">58</x:Int32>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Transition.To>
+                              <State x:Name="__ReferenceID2" DisplayName="Check Ingest" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_5">
+                                <State.Entry>
+                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="flowchart_ingest.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="search">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Search' tag='INPUT' /&gt;</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="click_media_level_ingest">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' /&gt;</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="Click_segment_level" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' idx='2' /&gt;
+</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="get_status_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                </State.Entry>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">473,159.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <State.Transitions>
+                                  <Transition DisplayName="T3" sap2010:WorkflowViewState.IdRef="Transition_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:PointCollection x:Key="ConnectorLocation">607,193.05 637,193.05 637,282.2 617,282.2</av:PointCollection>
+                                        <x:Int32 x:Key="SrcConnectionPointIndex">40</x:Int32>
+                                        <x:Int32 x:Key="DestConnectionPointIndex">52</x:Int32>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Transition.To>
+                                      <State x:Name="__ReferenceID5" DisplayName="Archival" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_8">
+                                        <State.Entry>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Flowchart_acrhival.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <InArgument x:TypeArguments="x:String" x:Key="click_archival">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ARCH' parentid='main_wfStatusBar' tableRow='1' tag='SPAN' /&gt;</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="diva_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='DIVA' parentid='main_wfStatusBar' tag='SPAN' /&gt;</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="diva_status">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="click_snell">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='SNELL' parentid='main_wfStatusBar' tag='SPAN' /&gt;</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="snell_status_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                            </ui:InvokeWorkflowFile>
+                                          </Sequence>
+                                        </State.Entry>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">483,239.5</av:Point>
+                                            <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <State.Transitions>
+                                          <Transition DisplayName="T5" sap2010:WorkflowViewState.IdRef="Transition_13">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:PointCollection x:Key="ConnectorLocation">550,300.5 550,330.5 557.95,330.5 557.95,343.5</av:PointCollection>
+                                                <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
+                                                <x:Int32 x:Key="DestConnectionPointIndex">42</x:Int32>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Transition.To>
+                                              <State x:Name="__ReferenceID4" DisplayName="S&amp;P ststus check in process monitor" sap:VirtualizedContainerService.HintSize="159,93" sap2010:WorkflowViewState.IdRef="State_7">
+                                                <State.Entry>
+                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="S_P_Status.xaml">
+                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                      <OutArgument x:TypeArguments="x:String" x:Key="Search_Media">[get_media]</OutArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="newrepo">[Out_Config("Reportpath").ToString]</InArgument>
+                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                  </ui:InvokeWorkflowFile>
+                                                </State.Entry>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">470.5,343.5</av:Point>
+                                                    <av:Size x:Key="ShapeSize">159,93</av:Size>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Double x:Key="StateContainerWidth">125</x:Double>
+                                                    <x:Double x:Key="StateContainerHeight">57.032000000000039</x:Double>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <State.Transitions>
+                                                  <Transition DisplayName="T7" sap2010:WorkflowViewState.IdRef="Transition_20">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:PointCollection x:Key="ConnectorLocation">470.5,394.65 440.5,394.65 440.5,471.5 336.6,471.5 336.6,441.5</av:PointCollection>
+                                                        <x:Int32 x:Key="SrcConnectionPointIndex">41</x:Int32>
+                                                        <x:Int32 x:Key="DestConnectionPointIndex">31</x:Int32>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Transition.To>
+                                                      <State x:Name="__ReferenceID6" sap2010:Annotation.AnnotationText="&#xA;" DisplayName=" S&amp;P from Mytaskboard" sap:VirtualizedContainerService.HintSize="134,103" sap2010:WorkflowViewState.IdRef="State_9">
+                                                        <State.Entry>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="478,787" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Task_Pick.xaml">
+                                                              <ui:InvokeWorkflowFile.Arguments>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="assign_popup">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl idx='1' parentid='promptBody1' tag='DIV' /&gt;</InArgument>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="click_ok">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='OK1' tag='DIV' /&gt;</InArgument>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="selector_picked_alert_msg">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl idx='2' isleaf='1' parentid='alertWrapper' tag='DIV' /&gt;</InArgument>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="reportpath">[Out_Config("Reportpath").ToString]</InArgument>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="click_pick">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='PickAcceptId' tag='SPAN' /&gt;</InArgument>
+                                                                <InArgument x:TypeArguments="x:String" x:Key="click_task_title">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='divEntry' tag='SPAN' /&gt;</InArgument>
+                                                              </ui:InvokeWorkflowFile.Arguments>
+                                                            </ui:InvokeWorkflowFile>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,282" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Perform_S&amp;P.xaml">
+                                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                                  </ui:InvokeWorkflowFile>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                            </ui:CommentOut>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,221" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Submit.xaml">
+                                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="selector_submitpopup">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='popUpHeader2' tag='H1' /&gt;</InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="selector_submit_button">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Submit1' tag='DIV' /&gt;</InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="selector_yes">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Yes2' tag='DIV' /&gt;</InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="selector_submit_message">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl idx='2' isleaf='1' parentid='alertWrapper' tag='DIV' /&gt;</InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                  </ui:InvokeWorkflowFile>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                            </ui:CommentOut>
+                                                          </Sequence>
+                                                        </State.Entry>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">283,338.5</av:Point>
+                                                            <av:Size x:Key="ShapeSize">134,103</av:Size>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                            <x:Double x:Key="StateContainerWidth">100</x:Double>
+                                                            <x:Double x:Key="StateContainerHeight">25</x:Double>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <State.Transitions>
+                                                          <Transition DisplayName="T9" sap2010:WorkflowViewState.IdRef="Transition_19">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <av:PointCollection x:Key="ConnectorLocation">283,374.55 253,374.55 253,433.9 227,433.9</av:PointCollection>
+                                                                <x:Int32 x:Key="SrcConnectionPointIndex">25</x:Int32>
+                                                                <x:Int32 x:Key="DestConnectionPointIndex">28</x:Int32>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Transition.To>
+                                                              <State x:Name="__ReferenceID7" DisplayName="S&amp;P with amrk as complete" sap:VirtualizedContainerService.HintSize="524,1190" sap2010:WorkflowViewState.IdRef="State_10">
+                                                                <State.Entry>
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="478,830" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Create_S&amp;P_Segment.xaml">
+                                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                                    </ui:InvokeWorkflowFile>
+                                                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,282" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                                                      <ui:CommentOut.Body>
+                                                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Multiple_Segments.xaml">
+                                                                            <ui:InvokeWorkflowFile.Arguments>
+                                                                              <InArgument x:TypeArguments="x:String" x:Key="No_of_segments">[Config("BS_Segments").ToString]</InArgument>
+                                                                              <InArgument x:TypeArguments="x:String" x:Key="Report_Path1">[Config("ReportPath").ToString]</InArgument>
+                                                                            </ui:InvokeWorkflowFile.Arguments>
+                                                                          </ui:InvokeWorkflowFile>
+                                                                        </Sequence>
+                                                                      </ui:CommentOut.Body>
+                                                                    </ui:CommentOut>
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Close Popup" sap:VirtualizedContainerService.HintSize="436,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="WaitForElement.xaml">
+                                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="selector" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl id='close*' tag='DIV' /&gt;</InArgument>
+                                                                        <OutArgument x:TypeArguments="x:Boolean" x:Key="ELement_Result" />
+                                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                                    </ui:InvokeWorkflowFile>
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Mark_As_Complete.xaml">
+                                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="Search_WO">[get_media]</InArgument>
+                                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                                    </ui:InvokeWorkflowFile>
+                                                                  </Sequence>
+                                                                </State.Entry>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <av:Point x:Key="ShapeLocation">93,409.5</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <State.Transitions>
+                                                                  <Transition DisplayName="T6" sap2010:WorkflowViewState.IdRef="Transition_23">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <av:PointCollection x:Key="ConnectorLocation">166.7,409.5 166.7,283.5 323.7,283.5 323.7,253.5</av:PointCollection>
+                                                                        <x:Int32 x:Key="SrcConnectionPointIndex">42</x:Int32>
+                                                                        <x:Int32 x:Key="DestConnectionPointIndex">43</x:Int32>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <Transition.To>
+                                                                      <State x:Name="__ReferenceID8" DisplayName="S&amp;P STATUS AFTER PICK task" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_11">
+                                                                        <State.Entry>
+                                                                          <Sequence sap:VirtualizedContainerService.HintSize="376,1834" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  navigiationOpenClo...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                                              <ui:Click.CursorPosition>
+                                                                                <ui:CursorPosition Position="Center">
+                                                                                  <ui:CursorPosition.OffsetX>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetX>
+                                                                                  <ui:CursorPosition.OffsetY>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetY>
+                                                                                </ui:CursorPosition>
+                                                                              </ui:Click.CursorPosition>
+                                                                              <ui:Click.Target>
+                                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="efd72a05-cc64-4688-b381-c89bd45c3ade" InformativeScreenshot="a04b77d8872f420667e140f11ae8f89c" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='navigiationOpenClosePanel' /&gt;">
+                                                                                  <ui:Target.TimeoutMS>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:Target.TimeoutMS>
+                                                                                  <ui:Target.WaitForReady>
+                                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                                  </ui:Target.WaitForReady>
+                                                                                </ui:Target>
+                                                                              </ui:Click.Target>
+                                                                            </ui:Click>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;clicked on navigation bar&quot;]" />
+                                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                                              <ui:Click.CursorPosition>
+                                                                                <ui:CursorPosition Position="Center">
+                                                                                  <ui:CursorPosition.OffsetX>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetX>
+                                                                                  <ui:CursorPosition.OffsetY>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetY>
+                                                                                </ui:CursorPosition>
+                                                                              </ui:Click.CursorPosition>
+                                                                              <ui:Click.Target>
+                                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ac065f3e-f248-458f-99d9-e5c765f79fb0" InformativeScreenshot="f65e7c4aa0a34d6618f3b0797eee35fc" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Tasks' idx='1' /&gt;">
+                                                                                  <ui:Target.TimeoutMS>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:Target.TimeoutMS>
+                                                                                  <ui:Target.WaitForReady>
+                                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                                  </ui:Target.WaitForReady>
+                                                                                </ui:Target>
+                                                                              </ui:Click.Target>
+                                                                            </ui:Click>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;clicked on  task bar&quot;]" />
+                                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                                              <ui:Click.CursorPosition>
+                                                                                <ui:CursorPosition Position="Center">
+                                                                                  <ui:CursorPosition.OffsetX>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetX>
+                                                                                  <ui:CursorPosition.OffsetY>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetY>
+                                                                                </ui:CursorPosition>
+                                                                              </ui:Click.CursorPosition>
+                                                                              <ui:Click.Target>
+                                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f00a1582-9741-4d64-a9bc-f6bd58943d12" InformativeScreenshot="dbab9dd53d87bd3fd8b500488a49c621" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Process' /&gt;">
+                                                                                  <ui:Target.TimeoutMS>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:Target.TimeoutMS>
+                                                                                  <ui:Target.WaitForReady>
+                                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                                  </ui:Target.WaitForReady>
+                                                                                </ui:Target>
+                                                                              </ui:Click.Target>
+                                                                            </ui:Click>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;clicked on process&quot;]" />
+                                                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="NavigatetoLatamDashboard.xaml">
+                                                                              <ui:InvokeWorkflowFile.Arguments>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="tasks_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Tasks' tag='SPAN' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="process_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Process' tag='SPAN' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="latam_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Longform LATAM' tag='SPAN' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Navigated_Latam_validate_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='breadCrumbKey1' tag='DIV' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                                                              </ui:InvokeWorkflowFile.Arguments>
+                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                </scg:Dictionary>
+                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                            </ui:InvokeWorkflowFile>
+                                                                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Search_ProcessMonitor.xaml">
+                                                                              <ui:InvokeWorkflowFile.Arguments>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="search_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='WCsrchIcon' tag='DIV' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Material_ID_Excel">[Out_Config("Material_ID").ToString]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="MaterialID_UI_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='Material-Chapter : *' parentid='actionDivHZ_0' tag='SPAN' /&gt;</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                                                              </ui:InvokeWorkflowFile.Arguments>
+                                                                            </ui:InvokeWorkflowFile>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;moved to S&amp;P&quot;]" />
+                                                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click-Media" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                                              <ui:Click.CursorPosition>
+                                                                                <ui:CursorPosition Position="Center">
+                                                                                  <ui:CursorPosition.OffsetX>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetX>
+                                                                                  <ui:CursorPosition.OffsetY>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:CursorPosition.OffsetY>
+                                                                                </ui:CursorPosition>
+                                                                              </ui:Click.CursorPosition>
+                                                                              <ui:Click.Target>
+                                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e52e81f5-ddd6-428f-bb8b-51a7a7e0feb6" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&#xA;&lt;webctrl aaname='S&amp;amp;P' parentid='main_wfStatusBar' /&gt;">
+                                                                                  <ui:Target.TimeoutMS>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:Target.TimeoutMS>
+                                                                                  <ui:Target.WaitForReady>
+                                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                                  </ui:Target.WaitForReady>
+                                                                                </ui:Target>
+                                                                              </ui:Click.Target>
+                                                                            </ui:Click>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;clicked on S&amp;P&quot;]" />
+                                                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text for S&amp;P status" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                                                                              <ui:GetValue.Target>
+                                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e5b33210-7091-4038-ba54-77f058ce2505" InformativeScreenshot="c83892654aa6a5e07895d11d2d3aa0ee" Selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='taskInfoContainer' parentname='progressInfo' /&gt;">
+                                                                                  <ui:Target.TimeoutMS>
+                                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                                  </ui:Target.TimeoutMS>
+                                                                                  <ui:Target.WaitForReady>
+                                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                                  </ui:Target.WaitForReady>
+                                                                                </ui:Target>
+                                                                              </ui:GetValue.Target>
+                                                                              <ui:GetValue.Value>
+                                                                                <OutArgument x:TypeArguments="x:String">[getstus1]</OutArgument>
+                                                                              </ui:GetValue.Value>
+                                                                            </ui:GetValue>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[getstus1]" />
+                                                                          </Sequence>
+                                                                        </State.Entry>
+                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                            <av:Point x:Key="ShapeLocation">250,192.5</av:Point>
+                                                                            <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                          </scg:Dictionary>
+                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                        <State.Transitions>
+                                                                          <Transition DisplayName="T8" sap2010:WorkflowViewState.IdRef="Transition_22">
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <av:PointCollection x:Key="ConnectorLocation">250,223 220,223 220,186.1 137,186.1</av:PointCollection>
+                                                                                <x:Int32 x:Key="SrcConnectionPointIndex">37</x:Int32>
+                                                                                <x:Int32 x:Key="DestConnectionPointIndex">44</x:Int32>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                            <Transition.To>
+                                                                              <x:Reference>__ReferenceID0</x:Reference>
+                                                                            </Transition.To>
+                                                                          </Transition>
+                                                                        </State.Transitions>
+                                                                      </State>
+                                                                    </Transition.To>
+                                                                  </Transition>
+                                                                </State.Transitions>
+                                                              </State>
+                                                            </Transition.To>
+                                                          </Transition>
+                                                        </State.Transitions>
+                                                      </State>
+                                                    </Transition.To>
+                                                  </Transition>
+                                                </State.Transitions>
+                                              </State>
+                                            </Transition.To>
+                                          </Transition>
+                                        </State.Transitions>
+                                      </State>
+                                    </Transition.To>
+                                  </Transition>
+                                </State.Transitions>
+                              </State>
+                            </Transition.To>
+                          </Transition>
+                        </State.Transitions>
+                      </State>
+                    </Transition.To>
+                  </Transition>
+                </State.Transitions>
+              </State>
+            </Transition.To>
+          </Transition>
+        </State.Transitions>
+      </State>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <StateMachine.Variables>
+        <Variable x:TypeArguments="s:Exception" Name="SystemError" />
+        <Variable x:TypeArguments="x:String" Name="ConfigFile" />
+        <Variable x:TypeArguments="x:String" Name="ConfigSheet" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ConfigDT" />
+        <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Out_Config" />
+        <Variable x:TypeArguments="s:String[]" Name="ConfigSheets" />
+        <Variable x:TypeArguments="x:String" Name="get_media" />
+      </StateMachine.Variables>
+    </StateMachine>
+  </Sequence>
+</Activity>
